@@ -100,7 +100,7 @@ foo n = (n + )
 ```
 
 #### C++
-```cpp
+```c++
 #include <iostream>
 using namespace std;
 
