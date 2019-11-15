@@ -7,6 +7,7 @@ We want to write a function that generates accumulators-- a function that takes 
 出处：[Revenge of the Nerds](http://www.paulgraham.com/icad.html)   
 
 #### Common Lisp
+Lisp 的实现很简短。
 ```lisp
 (defun foo (n)
 　　　　(lambda (i) (incf n i)))
