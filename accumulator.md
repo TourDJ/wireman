@@ -43,7 +43,11 @@ foo: n
 #### Python
 ```python
 def foo (n):
-　　　　return lambda i: return n += i
+　　s = [n]
+　　def bar (i):
+　　　　s[0] += i
+　　　　return s[0]
+　　return bar
 ```
 
 
