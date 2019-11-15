@@ -99,3 +99,18 @@ Python 面向对象的写法
 foo n = (n + )
 ```
 
+#### C++
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+auto a = [](auto n){ return [&](auto i){ return n += i; }; }(1);
+cout << a(2) << endl;
+cout << a(3) << endl;
+return 0;
+}
+```
+
+
