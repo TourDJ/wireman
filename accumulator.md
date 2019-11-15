@@ -50,7 +50,21 @@ def foo (n):
 　　return bar
 ```
 
+#### Java
+```
+　　public interface Inttoint {
+　　　　public int call (int i);
+　　}
 
+　　public static Inttoint foo (final int n) {
+　　　　return new Inttoint () {
+　　　　int s = n;
+　　　　public int call (int i) {
+　　　　s = s + i;
+　　　　return s;
+　　　　}};
+　　}
+```
 
 
 
