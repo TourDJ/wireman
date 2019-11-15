@@ -24,3 +24,30 @@ es6 箭头语法
 ```javascript
 foo = n => i => n += i
 ```
+#### Perl 5
+```perl
+sub foo {  
+  my ($n) = @_;
+  sub {$n += shift}
+}
+```
+
+#### Smalltalk
+```Smalltalk
+foo: n                              
+  |s|                      
+  s := n.                          
+  ^[:i| s := s+i. ]
+```
+
+#### Python
+```python
+def foo (n):
+　　　　return lambda i: return n += i
+```
+
+
+
+
+
+
