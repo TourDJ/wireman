@@ -51,7 +51,7 @@ def foo (n):
 ```
 
 #### Java
-```
+```java
 　　public interface Inttoint {
 　　　　public int call (int i);
 　　}
