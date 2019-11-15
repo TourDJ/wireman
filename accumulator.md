@@ -79,18 +79,19 @@ Python 面向对象的写法
 #### Java
 面向对象的语言少不了 Java，
 ```java
-　　public interface Inttoint {
-　　　　public int call (int i);
-　　}
+	interface Inttoint {
+		public int call(int i);
+	}
 
-　　public static Inttoint foo (final int n) {
-　　　　return new Inttoint () {
-　　　　int s = n;
-　　　　public int call (int i) {
-　　　　s = s + i;
-　　　　return s;
-　　　　}};
-　　}
+	public static Inttoint foo (final int n) {
+		return new Inttoint () {
+			int s = n;
+			public int call (int i) {
+				s = s + i;
+				return s;
+			}
+		};
+	}
 ```
 这不符合要求，因为它仅适用于整数。
 
