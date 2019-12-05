@@ -6,7 +6,7 @@ In computer science, partial application (or partial function application) refer
 
 Partial application can be described as taking a function that accepts some number of arguments, binding values to one or more of those arguments, and returning a new function that only accepts the remaining, un-bound arguments.
 
-示例      
+**示例**      
 
 定义一个偏函数
 ```javascript
@@ -36,8 +36,15 @@ var obj = {
     addOne: addOne
 }
 
-obj.addOne(2); //5
+obj.addOne(2); // 5
 ```
+
+使用 bind 实现
+```javascript
+var addOne = add.bind(null, 1);
+obj.addOne(2); // 4 
+```
+此时，this 👈 全局对象。
 
 
 ### 参考资料
