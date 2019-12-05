@@ -1,0 +1,4 @@
+
+Partial application
+
+In computer science, partial application (or partial function application) refers to the process of fixing a number of arguments to a function, producing another function of smaller arity. Given a function {\displaystyle f\colon (X\times Y\times Z)\to N}{\displaystyle f\colon (X\times Y\times Z)\to N}, we might fix (or 'bind') the first argument, producing a function of type {\displaystyle {\text{partial}}(f)\colon (Y\times Z)\to N}{\displaystyle {\text{partial}}(f)\colon (Y\times Z)\to N}. Evaluation of this function might be represented as {\displaystyle f_{partial}(2,3)}f_{partial}(2,3). Note that the result of partial function application in this case is a function that takes two arguments. Partial application is sometimes incorrectly called currying, which is a related, but distinct concept.
