@@ -1,8 +1,10 @@
 
 ## 偏函数(Partial application)
 
-In computer science, partial application (or partial function application) refers to the process of fixing a number of arguments to a function, producing another function of smaller arity.
-在计算机科学中，偏函数是指固定一个函数的一些参数，然后产生另一个更少参数的函数。
+In computer science, partial application (or partial function application) refers to the process of fixing a number of arguments to a function, producing another function of smaller arity.      
+意思是：在计算机科学中，偏函数是指固定一个函数的一些参数，然后产生另一个更少参数的函数。
+
+更通俗点：
 
 Partial application can be described as taking a function that accepts some number of arguments, binding values to one or more of those arguments, and returning a new function that only accepts the remaining, un-bound arguments.
 
