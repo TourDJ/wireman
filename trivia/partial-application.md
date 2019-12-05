@@ -1,4 +1,46 @@
 
-Partial application
+## 偏函数(Partial application)
 
-In computer science, partial application (or partial function application) refers to the process of fixing a number of arguments to a function, producing another function of smaller arity. Given a function {\displaystyle f\colon (X\times Y\times Z)\to N}{\displaystyle f\colon (X\times Y\times Z)\to N}, we might fix (or 'bind') the first argument, producing a function of type {\displaystyle {\text{partial}}(f)\colon (Y\times Z)\to N}{\displaystyle {\text{partial}}(f)\colon (Y\times Z)\to N}. Evaluation of this function might be represented as {\displaystyle f_{partial}(2,3)}f_{partial}(2,3). Note that the result of partial function application in this case is a function that takes two arguments. Partial application is sometimes incorrectly called currying, which is a related, but distinct concept.
+In computer science, partial application (or partial function application) refers to the process of fixing a number of arguments to a function, producing another function of smaller arity.
+在计算机科学中，偏函数是指固定一个函数的一些参数，然后产生另一个更少参数的函数。
+
+Partial application can be described as taking a function that accepts some number of arguments, binding values to one or more of those arguments, and returning a new function that only accepts the remaining, un-bound arguments.
+
+示例      
+
+定义一个偏函数
+```javascript
+function partial(fn) {
+    var args = [].slice.call(arguments, 1);
+    return function() {
+        var newArgs = args.concat([].slice.call(arguments));
+        return fn.apply(this, newArgs);
+    };
+};
+```
+定义示例业务函数
+```javascript
+function add(a, b) {
+    return a + b + this.value;
+}
+```
+调用偏函数
+```javascript
+var result = partial(add, 1);
+```
+测试
+```javascript
+var value = 1;
+var obj = {
+    value: 2,
+    addOne: addOne
+}
+
+obj.addOne(2); //5
+```
+
+
+### 参考资料
+[偏函数](https://www.cnblogs.com/guaidianqiao/p/7771506.html)      
+[Javascript中bind()方法的使用与实现](https://segmentfault.com/a/1190000002662251)     
+[函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)      
