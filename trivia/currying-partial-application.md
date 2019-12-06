@@ -1,13 +1,13 @@
 
-函数柯里化(Currying)和偏函数应用(Partial Application)
-
-## 函数柯里化(Currying)
+## 函数柯里化(Currying)和偏函数应用(Partial Application)
 
 > Currying：因为是美国数理逻辑学家哈斯凯尔·加里(Haskell Curry)发明了这种函数使用技巧，所以这样用法就以他的名字命名为Currying，中文翻译为“加里化”。
 
+### 函数柯里化(Currying)
+
 Currying(柯里化) 是把一个接受 N 个参数的函数转换成接受一个单一参数（最初函数的第一个参数）的函数，并且返回接受余下的参数而且返回结果的新函数的技术。也就是说每个函数都接受1个参数。
 
-### 一个通用的 curry() 函数接口
+#### 一个通用的 curry() 函数接口
 ```javascript
 function curry(fn) {  
     return function curried() {                           
@@ -71,8 +71,18 @@ border.curriedGenerate(2)('px')('solid')('#369')    // => "border: 2px solid #36
 ```
 注：一个 “[function decorator(函数装饰器)](http://raganwald.com/2013/01/03/function_and_method_decorators.html)” 是一个函数，它执行一个函数并返回它所执行的函数的修饰或修改版本。
 
+## 偏函数应用(Partial Application)
 
+Partial Application(偏函数应用) 是指使用一个函数并将其应用一个或多个参数，但不是全部参数，在这个过程中创建一个新函数。
 
+在 JavaScript 中已经可以使用 Function.prototype.bind() 偏函数应用。
+```javascript
+function add(a, b, c) { return a+b+c; }  
+add(2,4,8);  // 14
+ 
+var test = add.bind(this, 2, 4);  
+test(8);  // 14 
+```
 
 ### 参考资料
 [JavaScript 中的 Currying(柯里化) 和 Partial Application(偏函数应用)](https://www.html.cn/archives/7781)    
