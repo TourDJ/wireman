@@ -118,7 +118,14 @@ function normalizeNamespace (fn) {
   }
 }
 ```
-
+使用方法
+```javascript
+...mapActions([
+    'toggleAll',
+    'clearCompleted'
+])
+```
+运用了 es6 中的扩展运算符。
 
 ### 参考资料
 [偏函数](https://www.cnblogs.com/guaidianqiao/p/7771506.html)      
