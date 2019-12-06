@@ -77,7 +77,7 @@ subFrom20 = partial(subtract, _, 20);
 subFrom20(5);
 ```
 
-### vue 中代码片段
+### Vuex 中使用偏函数的经典代码片段
 ```javascript
 export const mapActions = normalizeNamespace((namespace, actions) => {
   const res = {}
