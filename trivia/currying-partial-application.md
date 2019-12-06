@@ -28,7 +28,7 @@ function curry(fn) {
 * 第 5 行：返回使用所有参数调用的原始函数
 * 第 6 行：否则，返回一个接受更多参数的函数，当被调用时，将使用之前传递的原始参数与传递给新返回的函数的参数结合在一起，再次调用我们的 curried 函数。
 
-测试 add 函数
+测试 `add` 函数
 ```javascript
 function add(a,b,c) { return a+b+c; } 
 
@@ -37,6 +37,42 @@ var curriedAdd = curry(add);
 curriedAdd(1)(2)(3);  // 6
 curriedAdd(1)(2,3);   // 6
 ```
+
+**支持对象
+
+使用我们的 curry() 函数作为一个*方法修饰器*似乎破坏了该方法所期望的对象上下文。我们必须保留原始的上下文，并确保并将其传递给已返回的 curried 函数的连续调用。
+```javascript
+function curry(fn) {  
+    return function curried() {
+        var args = toArray(arguments), 
+            context = this;
+ 
+        return args.length >= fn.length ?
+            fn.apply(context, args) :
+            function () {
+                var rest = toArray(arguments);
+                return curried.apply(context, args.concat(rest));
+            };
+    }
+}
+```
+测试对象
+```
+var border = {  
+  style: 'border',
+  generate: function(length, measure, type, color) {
+    return [this.style + ':', length + measure, type, color].join(' ') +';';
+  }
+};
+ 
+border.curriedGenerate = curry(border.generate);
+ 
+border.curriedGenerate(2)('px')('solid')('#369')    // => "border: 2px solid #369;"
+```
+注：一个 “[function decorator(函数装饰器)](http://raganwald.com/2013/01/03/function_and_method_decorators.html)” 是一个函数，它执行一个函数并返回它所执行的函数的修饰或修改版本。
+
+
+
 
 ### 参考资料
 [JavaScript 中的 Currying(柯里化) 和 Partial Application(偏函数应用)](https://www.html.cn/archives/7781)    
