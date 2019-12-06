@@ -77,6 +77,55 @@ subFrom20 = partial(subtract, _, 20);
 subFrom20(5);
 ```
 
+### Vuex 中使用偏函数的经典代码片段
+```javascript
+export const mapActions = normalizeNamespace((namespace, actions) => {
+  const res = {}
+
+  normalizeMap(actions).forEach(({ key, val }) => {
+    res[key] = function mappedAction (...args) {
+      // get dispatch function from store
+      let dispatch = this.$store.dispatch
+      if (namespace) {
+        dispatch = module.context.dispatch
+      }
+      return typeof val === 'function'
+        ? val.apply(this, [dispatch].concat(args))
+        : dispatch.apply(this.$store, [val].concat(args))
+    }
+  })
+  return res
+})
+
+function normalizeMap (map) {
+  if (!isValidMap(map)) {
+    return []
+  }
+  return Array.isArray(map)
+    ? map.map(key => ({ key, val: key }))
+    : Object.keys(map).map(key => ({ key, val: map[key] }))
+}
+
+function normalizeNamespace (fn) {
+  return (namespace, map) => {
+    if (typeof namespace !== 'string') {
+      map = namespace
+      namespace = ''
+    } else if (namespace.charAt(namespace.length - 1) !== '/') {
+      namespace += '/'
+    }
+    return fn(namespace, map)
+  }
+}
+```
+使用方法
+```javascript
+...mapActions([
+    'toggleAll',
+    'clearCompleted'
+])
+```
+运用了 es6 中的扩展运算符。
 
 ### 参考资料
 [偏函数](https://www.cnblogs.com/guaidianqiao/p/7771506.html)      
