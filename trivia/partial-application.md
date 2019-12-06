@@ -78,8 +78,7 @@ subFrom20(5);
 ```
 
 ### vue 中代码片段
-```
-
+```javascript
 /**
  * Reduce the code which written in Vue.js for dispatch the action
  * @param {String} [namespace] - Module's namespace
