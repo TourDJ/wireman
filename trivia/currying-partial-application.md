@@ -1,7 +1,7 @@
 
 ## 函数柯里化(Currying)和偏函数应用(Partial Application)
 
-> Currying：因为是美国数理逻辑学家哈斯凯尔·加里(Haskell Curry)发明了这种函数使用技巧，所以这样用法就以他的名字命名为Currying，中文翻译为“加里化”。
+> Currying：因为是美国数理逻辑学家哈斯凯尔·加里(Haskell Curry)发明了这种函数使用技巧，所以这样用法就以他的名字命名为Currying，中文翻译为“加里化”或“柯里化”。
 
 ### 函数柯里化(Currying)
 
