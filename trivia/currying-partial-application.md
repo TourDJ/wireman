@@ -28,12 +28,14 @@ function curry(fn) {
 * 第 5 行：返回使用所有参数调用的原始函数
 * 第 6 行：否则，返回一个接受更多参数的函数，当被调用时，将使用之前传递的原始参数与传递给新返回的函数的参数结合在一起，再次调用我们的 curried 函数。
 
-测试 `add` 函数
+业务函数 `add` 
 ```javascript
 function add(a,b,c) { 
     return a + b + c; 
 } 
-
+```
+测试
+```javascript
 var curriedAdd = curry(add); 
 
 curriedAdd(1)(2)(3);  // 6
@@ -58,7 +60,7 @@ function curry(fn) {
     }
 }
 ```
-测试对象
+业务对象 `border`
 ```javascript
 var border = {  
   style: 'border',
@@ -66,7 +68,9 @@ var border = {
     return [this.style + ':', length + measure, type, color].join(' ') +';';
   }
 };
- 
+```
+测试
+```javascript
 border.curriedGenerate = curry(border.generate);
  
 border.curriedGenerate(2)('px')('solid')('#369')    // => "border: 2px solid #369;"
