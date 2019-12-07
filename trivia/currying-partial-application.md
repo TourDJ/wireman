@@ -9,15 +9,15 @@ Currying(柯里化) 是把一个接受 N 个参数的函数转换成接受一个
 
 #### 一个通用的 curry() 函数接口
 ```javascript
-function curry(fn) {  
-    return function curried() {                           
+function curry(fn) {
+    return function curried() {
         var args = [].slice.call(arguments);
         return args.length >= fn.length ?
             fn.apply(null, args) :
             function () {
-            var rest = [].slice.call(arguments);
-            return curried.apply(null, args.concat(rest));
-        };
+                var rest = [].slice.call(arguments);
+                return curried.apply(null, args.concat(rest));
+            };
     };
 }
 ```
@@ -30,7 +30,9 @@ function curry(fn) {
 
 测试 `add` 函数
 ```javascript
-function add(a,b,c) { return a+b+c; } 
+function add(a,b,c) { 
+    return a+b+c; 
+} 
 
 var curriedAdd = curry(add); 
 
