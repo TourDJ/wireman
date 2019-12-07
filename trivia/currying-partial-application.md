@@ -82,14 +82,17 @@ border.curriedGenerate(2)('px')('solid')('#369')    // => "border: 2px solid #36
 
 Partial Application(偏函数应用) 是指使用一个函数并将其应用一个或多个参数，但不是全部参数，在这个过程中创建一个新函数。
 
-在 JavaScript 中已经可以使用 Function.prototype.bind() 偏函数应用。
+在 JavaScript 中已经可以使用 `Function.prototype.bind()` 偏函数应用。
 ```javascript
-function add(a, b, c) { return a+b+c; }  
-add(2,4,8);  // 14
+function add(a, b, c) { 
+    return a + b + c; 
+}  
+add(2,4,8);     // 14
  
 var test = add.bind(this, 2, 4);  
-test(8);  // 14 
+test(8);        // 14 
 ```
+[另参见偏函数说明](./partial-application.md)      
 
 ### 参考资料
 [JavaScript 中的 Currying(柯里化) 和 Partial Application(偏函数应用)](https://www.html.cn/archives/7781)    
