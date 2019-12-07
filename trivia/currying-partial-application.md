@@ -46,20 +46,20 @@ curriedAdd(1)(2,3);   // 6
 ```javascript
 function curry(fn) {  
     return function curried() {
-        var args = toArray(arguments), 
+        var args = [].slice.call(arguments), 
             context = this;
  
         return args.length >= fn.length ?
             fn.apply(context, args) :
             function () {
-                var rest = toArray(arguments);
+                var rest = [].slice.call(arguments);
                 return curried.apply(context, args.concat(rest));
             };
     }
 }
 ```
 测试对象
-```
+```javascript
 var border = {  
   style: 'border',
   generate: function(length, measure, type, color) {
@@ -71,7 +71,8 @@ border.curriedGenerate = curry(border.generate);
  
 border.curriedGenerate(2)('px')('solid')('#369')    // => "border: 2px solid #369;"
 ```
-注：一个 “[function decorator(函数装饰器)](http://raganwald.com/2013/01/03/function_and_method_decorators.html)” 是一个函数，它执行一个函数并返回它所执行的函数的修饰或修改版本。
+
+说明：一个 “[function decorator(函数装饰器)](http://raganwald.com/2013/01/03/function_and_method_decorators.html)” 是一个函数，它执行一个函数并返回它所执行的函数的修饰或修改版本。
 
 ## 偏函数应用(Partial Application)
 
