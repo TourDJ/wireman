@@ -31,7 +31,7 @@ function curry(fn) {
 测试 `add` 函数
 ```javascript
 function add(a,b,c) { 
-    return a+b+c; 
+    return a + b + c; 
 } 
 
 var curriedAdd = curry(add); 
