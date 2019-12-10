@@ -41,7 +41,27 @@ if (!Function.prototype.bind) {
     }
 }
 ```
-
+[MDN 中bind 的 Polyfill](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)      
+```javascript
+// Does not work with `new funcA.bind(thisArg, args)`
+if (!Function.prototype.bind) (function(){
+  var slice = Array.prototype.slice;
+  Function.prototype.bind = function() {
+    var thatFunc = this, thatArg = arguments[0];
+    var args = slice.call(arguments, 1);
+    if (typeof thatFunc !== 'function') {
+      // closest thing possible to the ECMAScript 5
+      // internal IsCallable function
+      throw new TypeError('Function.prototype.bind - ' +
+             'what is trying to be bound is not callable');
+    }
+    return function(){
+      var funcArgs = args.concat(slice.call(arguments))
+      return thatFunc.apply(thatArg, funcArgs);
+    };
+  };
+})();
+```
 
 关于 call 和 apply 的使用区别，如果非要用一句简洁明了的话来阐述它，我就想引用 [stackoverflow](https://stackoverflow.com/questions/1986896/what-is-the-difference-between-call-and-apply) 上的一段解释：
 
