@@ -2,9 +2,8 @@
 ## apply 和 call 区别
 
 如果用一句简洁明了的话来阐述它，我想引用 [stackoverflow](https://stackoverflow.com/questions/1986896/what-is-the-difference-between-call-and-apply) 上的一段解释：
-***
-The difference is that apply lets you invoke the function with arguments as an array; call requires the parameters be listed explicitly. A useful mnemonic is "A for array and C for comma."
-***
+
+*The difference is that apply lets you invoke the function with arguments as an array; call requires the parameters be listed explicitly. A useful mnemonic is "A for array and C for comma."*
 
 ### 延伸阅读
 [call(), apply() and bind() Methods in JavaScript](https://www.codingame.com/playgrounds/9799/learn-solve-call-apply-and-bind-methods-in-javascript)      
