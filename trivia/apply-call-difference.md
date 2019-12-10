@@ -63,11 +63,9 @@ if (!Function.prototype.bind) (function(){
 })();
 ```
 
-关于 call 和 apply 的使用区别，如果非要用一句简洁明了的话来阐述它，我就想引用 [stackoverflow](https://stackoverflow.com/questions/1986896/what-is-the-difference-between-call-and-apply) 上的一段解释：
+### 示例
 
-*The difference is that apply lets you invoke the function with arguments as an array; call requires the parameters be listed explicitly. A useful mnemonic is "A for array and C for comma."*
-
-示例
+一个例子
 ```javascript
 var list = [1, 5, 8];
 function add() {
@@ -79,6 +77,12 @@ console.log(add.call(null, 1, 2));			// 3
 console.log(add.apply(null, list));			// 14
 ```
 这里，用到了 [arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments), [Array.from()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/from), [array.reduce()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) 等语法。
+
+### 总结
+
+关于 call 和 apply 的使用，如果非要用一句简洁明了的话来阐述它，我就想引用 [stackoverflow](https://stackoverflow.com/questions/1986896/what-is-the-difference-between-call-and-apply) 上的一段解释：
+
+*The difference is that apply lets you invoke the function with arguments as an array; call requires the parameters be listed explicitly. A useful mnemonic is "A for array and C for comma."*
 
 ### 延伸阅读
 [JavaScript - call，apply，bind](https://ithelp.ithome.com.tw/articles/10195896)       
