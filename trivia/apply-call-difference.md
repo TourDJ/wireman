@@ -41,7 +41,7 @@ if (!Function.prototype.bind) {
     }
 }
 ```
-[MDN 中bind 的 Polyfill](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)      
+[MDN 中 bind] 的 Polyfill(https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)      
 ```javascript
 // Does not work with `new funcA.bind(thisArg, args)`
 if (!Function.prototype.bind) (function(){
