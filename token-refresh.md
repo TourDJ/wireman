@@ -9,7 +9,7 @@
         "access_token": "",
         "refresh_token": ""
     }
-```
+    ```
 4. The client saves this data.
 5. With each request, the client checks to see if Access Token is expired or not. In case of Access Token has not expired, it simply sends the request using it.
 6. For updates, the client sends a Refresh Token to a specially defined endpoint. (for example /v1/account/refresh-token)
