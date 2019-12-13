@@ -14,7 +14,8 @@
 
 操作 attribute ：
 ```javascript
-document.getElementById('test').attributes; // return: [custom-attr="hello", class="button", id="test"]
+document.getElementById('test').attributes; 
+// return: [custom-attr="hello", class="button", id="test"]
 document.getElementById('test').getAttribute('custom-attr')   // 1
 ```
 
