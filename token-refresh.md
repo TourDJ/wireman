@@ -3,12 +3,12 @@
 1. The client is authenticated by sending a login/password pair.
 2. If successful, the server creates a new Access Token and Refresh Token. Refresh Token is recorded in the database along with the time of his life.
 3. The server sends the response to the client in the form:
-```json
-{
-    "expired_at": "",
-    "access_token": "",
-    "refresh_token": ""
-}
+    ```json
+    {
+        "expired_at": "",
+        "access_token": "",
+        "refresh_token": ""
+    }
 ```
 4. The client saves this data.
 5. With each request, the client checks to see if Access Token is expired or not. In case of Access Token has not expired, it simply sends the request using it.
