@@ -7,7 +7,7 @@
 {
     "expired_at": "",
     "access_token": "",
-    "refresh_token": ''
+    "refresh_token": ""
 }
 ```
 4. The client saves this data.
