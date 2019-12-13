@@ -5,9 +5,9 @@
 3. The server sends the response to the client in the form:
 ```json
 {
-    "expired_at": ...,
-    "access_token": ...,
-    "refresh_token": ...
+    "expired_at": "",
+    "access_token": "",
+    "refresh_token": ''
 }
 ```
 4. The client saves this data.
