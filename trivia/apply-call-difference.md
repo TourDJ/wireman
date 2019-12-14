@@ -1,5 +1,5 @@
 
-## Javascript 中的 apply、call、bind
+## Javascript 中 apply、call、bind 的各自表现
 
 call、apply、bind 三者都是 JavaScript Function 的內建函数，他們与 this 的关系重大，除此之外，call & apply 可以作为调用 Function 的另一个手段，而 bind 则会返回一个经过包裹后的 Function 回来。
 
