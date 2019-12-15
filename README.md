@@ -1,5 +1,6 @@
 # wireman
 ![wireman](./images/wireman.jpg)     
+<p align="center"><a href="https://github.com/TourDJ/wireman" target="_blank" rel="noopener noreferrer"><img width="100" src="https://github.com/TourDJ/wireman/images/wireman.jpg" alt="wireman logo"></a></p>
 A playground for display the programming techs.
 
 
