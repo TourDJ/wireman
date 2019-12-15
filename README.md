@@ -1,4 +1,5 @@
 # wireman
+![wireman](./images/wireman.jpg)     
 A playground for display the programming techs.
 
 
