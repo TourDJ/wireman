@@ -1,6 +1,5 @@
     
 <p align="center"><a href="https://github.com/TourDJ/wireman" target="_blank" rel="noopener noreferrer"><img  src="https://github.com/TourDJ/wireman/blob/master/images/wireman.jpg" alt="wireman logo"></a></p>
-<br>
 A playground for display the programming techs.
 
 
