@@ -8,7 +8,7 @@
 * I – 接口隔离原则（Interface-Segregation Principle）
 * D – 依赖倒置原则（Dependecy-Inversion Principle）
 
-### S.R.P（简称）原则指出：
+### S.R.P（单一职责原则）原则
 
 一个类应该有且只有一个去改变它的理由，这意味着一个类应该只有一项工作。
 
