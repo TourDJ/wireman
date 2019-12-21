@@ -13,6 +13,8 @@ A playground for display the programming techs.
 [Javascript 中 apply、call、bind 的各自表现](./trivia/apply-call-difference.md)      
 [HTML 中特性（attribute） 和 属性（property）差异](./trivia/properties-attributes.md)      
 [es6 中的 import 和 export](./trivia/es6-import-export.md)        
+[S.O.L.I.D：面向对象设计的 5 大原则](./trivia/s-o-l-i-d.md)      
+
 
 
 
@@ -21,5 +23,3 @@ A playground for display the programming techs.
 
 ## 收藏
 
-[ECMAScript compatibility table](https://kangax.github.io/compat-table/es6/)          
-[DOM tree](https://javascript.info/dom-nodes)        
