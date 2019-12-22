@@ -27,17 +27,17 @@ css 官网对伪类与伪元素的描述：
 
 常见的包括：
 
-* :first-child 选择某个元素的第一个子元素；
-* :last-child 选择某个元素的最后一个子元素；
-* :nth-child() 选择某个元素的一个或多个特定的子元素；
-* :nth-last-child() 选择某个元素的一个或多个特定的子元素，从这个元素的最后一个子元素开始算；
-* :nth-of-type() 选择指定的元素；
-* :nth-last-of-type() 选择指定的元素，从元素的最后一个开始计算；
-* :first-of-type 选择一个上级元素下的第一个同类子元素；
-* :last-of-type 选择一个上级元素的最后一个同类子元素；
-* :only-child 选择的元素是它的父元素的唯一一个子元素；
-* :only-of-type 选择一个元素是它的上级元素的唯一一个相同类型的子元素；
-* :empty 选择的元素里面没有任何内容。
+* `:first-child` 选择某个元素的第一个子元素；
+* `:last-child` 选择某个元素的最后一个子元素；
+* `:nth-child()` 选择某个元素的一个或多个特定的子元素；
+* `:nth-last-child()` 选择某个元素的一个或多个特定的子元素，从这个元素的最后一个子元素开始算；
+* `:nth-of-type()` 选择指定的元素；
+* `:nth-last-of-type()` 选择指定的元素，从元素的最后一个开始计算；
+* `:first-of-type` 选择一个上级元素下的第一个同类子元素；
+* `:last-of-type` 选择一个上级元素的最后一个同类子元素；
+* `:only-child` 选择的元素是它的父元素的唯一一个子元素；
+* `:only-of-type` 选择一个元素是它的上级元素的唯一一个相同类型的子元素；
+* `:empty` 选择的元素里面没有任何内容。
 
 ### 伪元素
 伪元素是对元素中的特定内容进行操作，而不是描述状态。它的操作层次比伪类更深一层，因此动态性比伪类低很多。
@@ -46,17 +46,17 @@ css 官网对伪类与伪元素的描述：
 
 常见的伪元素选择器包括：
 
-* :first-letter 选择元素文本的第一个字（母）。
-* :first-line 选择元素文本的第一行。
-* :before 在元素内容的最前面添加新内容。
-* :after 在元素内容的最后面添加新内容。
+* `:first-letter` 选择元素文本的第一个字（母）。
+* `:first-line` 选择元素文本的第一行。
+* `:before` 在元素内容的最前面添加新内容。
+* `:after` 在元素内容的最后面添加新内容。
 
 ### 单冒号还是双冒号?
 w3c标准中的描述如下：
 
 *Please note that the new CSS3 way of writing pseudo-elements is to use a double colon, eg a::after { … }, to set them apart from pseudo-classes. You may see this sometimes in CSS. CSS3 however also still allows for single colon pseudo-elements, for the sake of backwards compatibility, and we would advise that you stick with this syntax for the time being.*
 
-CSS3规范中的要求使用双冒号(::)表示伪元素，以此来区分伪元素和伪类，比如::before和::after等伪元素使用双冒号(::)，:hover和:active等伪类使用单冒号(:)。对于 CSS2 中已经有的伪元素，例如 :before，单冒号和双冒号的写法 ::before 作用是一样的。
+CSS3规范中的要求使用双冒号(`::`)表示伪元素，以此来区分伪元素和伪类，比如`::before`和`::after`等伪元素使用双冒号(::)，`:hover`和`:active`等伪类使用单冒号(`:`)。对于 CSS2 中已经有的伪元素，例如 :before，单冒号和双冒号的写法 ::before 作用是一样的。
 
 为了向后兼容，我们建议你在目前还是使用单冒号的写法。
 
