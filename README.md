@@ -15,7 +15,7 @@ A playground for display the programming techs.
 [es6 中的 import 和 export](./trivia/es6-import-export.md)        
 [S.O.L.I.D：面向对象设计的 5 大原则](./trivia/s-o-l-i-d.md)      
 [Javascript 原型链及继承](./trivia/javascript-prototype.md)      
-[CSS 中的伪类和伪元素]()       
+[CSS 中的伪类和伪元素](/trivia/pseudo-elements-and-pseudo-classe.md)       
 
 
 
