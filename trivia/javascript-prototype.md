@@ -73,5 +73,19 @@ A.call 的意思是先把A的this设置为a，然后执行A的body也就是 `thi
 
 `__proto__` 是内部 `[[Prototype]]` 。从 ECMAScript 6 开始，`[[Prototype]]` 可以通过 `Object.getPrototypeOf()` 和 `Object.setPrototypeOf()` 访问器来访问。这个等同于 JavaScript 的非标准但许多浏览器实现的属性 `__proto__`。
 
+### 原型链
+原型链指向Function.prototype的函数们
+原型链指向Object.propotype的对象们
+
+
+### instanceof 运算符
+
 instanceof 运算符可以用来判断某个构造函数的prototype属性是否存在另外一个要检测对象的原型链上。
+
+
+### 参考资料
+[理解JavaScript的原型链和继承](https://blog.oyanglul.us/javascript/understand-prototype.html)      
+[彻底理解JavaScript原型](http://www.imooc.com/article/2088)      
+[JavaScript原型链与继承](https://juejin.im/post/5daf0d205188252aa65beaf4)      
+
 
