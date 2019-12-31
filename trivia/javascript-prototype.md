@@ -39,9 +39,16 @@ var foo2 = new Foo();
 foo2.birth  // 20
 ```
 
-重写原型对象，会导致原型对象的 constructor 属性指向 Object ，导致原型链关系混乱，所以我们应该在重写原型对象的时候指定 constructor( instanceof 仍然会返回正确的值)
+重写原型对象，会导致原型对象的 `constructor` 属性指向 Object ，导致原型链关系混乱。
 ```javascript
 Foo.prototype.constructor === Foo // false
+```
+
+所以我们应该在重写原型对象的时候指定 `constructor`( `instanceof` 仍然会返回正确的值)。
+```javascript
+Foo.prototype = {
+    constructor: Foo
+}
 ```
 
 
