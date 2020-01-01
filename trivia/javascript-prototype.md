@@ -73,9 +73,9 @@ A.call 的意思是先把A的this设置为a，然后执行A的body也就是 `thi
 
 ### 原型链
 
-![Javascript 原型链图](../images/javascript-proto.jpg)     
-
 如果一个实例的原型对象等于另一个类型的实例，而那个实例的原型对象又等于其他类型的实例，如此层层递进，就构成了实例与原型的链条，这就是所谓的原型链。
+
+![Javascript 原型链图](../images/javascript-proto.jpg)     
 
 原型链大致分为：
 * 原型链指向 `Function.prototype` 的函数们
