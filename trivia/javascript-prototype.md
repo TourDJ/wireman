@@ -3,7 +3,7 @@
 
 JavaScript 是基于原型的。我们创建的每个函数都有一个 prototype(原型) 属性，这个属性是一个指针，指向一个对象，而这个对象有一个指向一个原型对象的链，它的用途是包含可以由特定类型的所有实例共享的属性和方法。
 
-![Javascript 原型链图](../images/javascript-proto.jpg])     
+![Javascript 原型链图](../images/javascript-proto.jpg)     
 
 ### 原型和实例的关系
 * 每一个构造函数都拥有一个 `prototype` 属性，这个属性指向一个对象，也就是原型对象
