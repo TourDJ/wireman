@@ -1,11 +1,11 @@
 
-## 收藏
+## 小清新
 
-- [小清新](#fresh)        
+- [风向](#direction)        
 - [帮手](#assistant)        
 - [基础](#basis)           
 
-### <a id="fresh">小清新</a>
+### <a id="direction">风向</a>
 
 [animate.css](https://daneden.github.io/animate.css) A cross-browser library of CSS animations
 
