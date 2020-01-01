@@ -3,8 +3,6 @@
 
 JavaScript 是基于原型的。我们创建的每个函数都有一个 prototype(原型) 属性，这个属性是一个指针，指向一个对象，而这个对象有一个指向一个原型对象的链，它的用途是包含可以由特定类型的所有实例共享的属性和方法。
 
-![Javascript 原型链图](../images/javascript-proto.jpg)     
-
 ### 原型和实例的关系
 * 每一个构造函数都拥有一个 `prototype` 属性，这个属性指向一个对象，也就是原型对象
 * 原型对象默认拥有一个 `constructor` 属性，指向指向它的那个构造函数
@@ -74,6 +72,8 @@ A.call 的意思是先把A的this设置为a，然后执行A的body也就是 `thi
 `__proto__` 是内部 `[[Prototype]]` 。从 ECMAScript 6 开始，`[[Prototype]]` 可以通过 `Object.getPrototypeOf()` 和 `Object.setPrototypeOf()` 访问器来访问。这个等同于 JavaScript 的非标准但许多浏览器实现的属性 `__proto__`。
 
 ### 原型链
+
+![Javascript 原型链图](../images/javascript-proto.jpg)     
 
 如果一个实例的原型对象等于另一个类型的实例，而那个实例的原型对象又等于其他类型的实例，如此层层递进，就构成了实例与原型的链条，这就是所谓的原型链。
 
