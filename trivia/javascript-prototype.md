@@ -62,7 +62,9 @@ var a = new A('hehe')
 分析一下 new A 到底发生了什么：
 ```javascript
 var a = new A('hehe') 
+```
 =>
+```javascript
 var a = new Object();
 a.__proto__ = A.prototype;
 A.call(a, 'hehe');
@@ -70,6 +72,20 @@ A.call(a, 'hehe');
 A.call 的意思是先把A的this设置为a，然后执行A的body也就是 `this.name = name`。
 
 `__proto__` 是内部 `[[Prototype]]` 。从 ECMAScript 6 开始，`[[Prototype]]` 可以通过 `Object.getPrototypeOf()` 和 `Object.setPrototypeOf()` 访问器来访问。这个等同于 JavaScript 的非标准但许多浏览器实现的属性 `__proto__`。
+
+以下代码显示了 js 引擎如何获取属性的：
+```javascript
+function getProperty(obj, prop) {
+  if (obj.hasOwnProperty(prop))
+    return obj[prop]
+ 
+  else if (obj.__proto__ !== null)
+    return getProperty(obj.__proto__, prop)
+ 
+  else
+    return undefined
+}
+```
 
 ### 原型链
 
