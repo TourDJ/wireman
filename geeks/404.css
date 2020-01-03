@@ -1,8 +1,7 @@
 
-## css 3 实现的 404
-用纯 css 实现 404 动画
-```css
-.message {
+/*css3 实现的 404*/
+
+  .message {
     position: absolute;
     top: 20%;
     right: 5%;
@@ -378,4 +377,4 @@
       transform: translateX(-200px);
     }
   }		
-```
+
