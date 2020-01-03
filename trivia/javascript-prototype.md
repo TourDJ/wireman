@@ -91,5 +91,6 @@ instanceof 运算符可以用来判断某个构造函数的prototype属性是否
 [理解JavaScript的原型链和继承](https://blog.oyanglul.us/javascript/understand-prototype.html)      
 [彻底理解JavaScript原型](http://www.imooc.com/article/2088)      
 [JavaScript原型链与继承](https://juejin.im/post/5daf0d205188252aa65beaf4)      
+[Javascript – How Prototypal Inheritance really works](http://blog.vjeux.com/2011/javascript/how-prototypal-inheritance-really-works.html)       
 
 
