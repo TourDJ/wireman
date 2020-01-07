@@ -9,7 +9,7 @@ A playground for display the programming techs.
 
 ## 冷知识
 [什么是偏函数？](./trivia/partial-application.md)      
-[偏函数与柯里花有什么不同？](./trivia/currying-partial-application.md)         
+[偏函数与柯里化有什么不同？](./trivia/currying-partial-application.md)         
 [Javascript 中 apply、call、bind 的各自表现](./trivia/apply-call-difference.md)      
 [HTML 中特性（attribute） 和 属性（property）差异](./trivia/properties-attributes.md)      
 [es6 中的 import 和 export](./trivia/es6-import-export.md)        
