@@ -5,6 +5,8 @@
 
 [The State of JavaScript](http://brendaneich.github.io/Strange-Loop-2012/#/)      
 [1.5万字概括ES6全部特性](https://juejin.im/post/5d9bf530518825427b27639d)        
+[15 个有趣的 JavaScript 与 CSS 库](https://juejin.im/entry/583ed0d561ff4b006ce73623)      
+
 
 
 ### CSS
