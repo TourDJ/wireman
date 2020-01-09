@@ -17,7 +17,7 @@
 
 [ECMAScript compatibility table](https://kangax.github.io/compat-table/es6)  
 
-[Font Awesome 中文网](http://www.fontawesome.com.cn/faicons/)      
+[Font Awesome 中文网](http://www.fontawesome.com.cn/faicons/) 提供可缩放矢量图标,它可以被定制大小、颜色、阴影以及任何可以用CSS的样式。      
 
 [PostCSS](https://www.postcss.com.cn/) 是一个用 JavaScript 工具和插件转换 CSS 代码的工具。         
 
