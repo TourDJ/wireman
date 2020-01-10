@@ -27,4 +27,6 @@ A playground for display the programming techs.
 ## 收藏
 
 - [小清新](./resource/freshness.md)       
-- [好文推荐](./resource/articles.md)     
+- [好文推荐](./resource/articles.md)        
+- [插件和工具](/resource/tools_plugins.md)        
+
