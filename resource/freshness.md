@@ -34,6 +34,7 @@ content backdrops in any part of your website.
 [DOM tree](https://javascript.info/dom-nodes)       
 [CSS 基本规则语法及关键字索引](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference)      
 [CSS Color](https://developer.mozilla.org/zh-CN/docs/Web/CSS/color_value)         
+[CSS属性值定义语法](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Value_definition_syntax#Double_bar)         
 
 
 
