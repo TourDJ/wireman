@@ -19,4 +19,9 @@
 [CSS 技巧：使你的 CSS 更加专业](https://juejin.im/entry/589575478d6d810058381cf1)        
 [CSS Linear Gradient](https://css-tricks.com/snippets/css/css-linear-gradient/)         
 
+### 编程语言
+
+[Why Lisp Failed](http://www.locklessinc.com/articles/why_lisp_failed/)      
+
+[为什么Lisp没有流行起来](https://www.oschina.net/translate/why_lisp_failed?p=1)    
 
